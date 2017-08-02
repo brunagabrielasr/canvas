@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Passo 1</title>
+</head>
+<body>
+	<canvas id="meu_canvas" width="300" height="300">
+		Não suporta HTML 5
+	</canvas>
+	<script type="text/javascript">
+		
+		//Canvas e contexto
+		var canvas = document.getElementById('meu_canvas');
+		var contexto = canvas.getContext('2d');
+
+		/*contexto.lineWidth = 10;
+		
+		//Atribuir cor
+		contexto.fillStyle = 'blue';
+		contexto.strokeStyle = 'yellow';
+
+		//Desenhar um quadrado
+		contexto.fillRect(50,50,100,100);
+		contexto.strokeRect(50,50,100,100);*/
+
+		/*//######Desenhar estrela#####
+		//1- Iniciar o caminho:
+		contexto.beginPath();
+
+		//Desentar a estrela
+		
+		contexto.moveTo(75,250);//Ponto inicial
+		contexto.lineTo(150,50);
+		contexto.lineTo(255,250);
+		contexto.lineTo(50,120);
+		contexto.lineTo(250,120);
+		contexto.lineTo(75,250);
+
+		//Configurar linhas
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = 'yellow';
+
+		//
+		contexto.stroke();*/
+
+		contexto.beginPath();
+		contexto.moveTo(100,100);
+		contexto.lineTo(100, 50);
+		contexto.lineTo(150, 50);
+		contexto.lineTo(150, 100);
+		contexto.lineTo(100, 100);
+
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = 'red';
+
+		contexto.stroke();
+
+
+	</script>
+</body>
+</html>
